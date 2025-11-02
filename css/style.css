@@ -88,24 +88,40 @@ nav ul li a.active {
     max-width: 600px;
 }
 
+/* From Uiverse.io by barisdogansutcu */ 
 .btn {
-    display: inline-block;
-    padding: 12px 30px;
-    background-color: #3498db;
-    color: white;
-    text-decoration: none;
-    border-radius: 4px;
-    transition: background-color 0.3s;
+  padding: 17px 40px;
+  border-radius: 50px;
+  cursor: pointer;
+  border: 0;
+  background-color: white;
+  box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 15px;
+  transition: all 0.5s ease;
 }
 
 .btn:hover {
-    background-color: #2980b9;
+  letter-spacing: 3px;
+  background-color: hsl(261deg 80% 48%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(93 24 220) 0px 7px 29px 0px;
 }
 
+
+
 /* 作品集部分 */
-.section {
+#portfolio.section {
     padding: 80px 0;
+    /* 星空渐变背景：深蓝到紫色，带星点效果 */
+    background: linear-gradient(135deg, #0f2027 0%, #2c5364 50%, #3a1c71 100%);
+    position: relative;
+    overflow: hidden;
 }
+
+
 
 .section-title {
     text-align: center;
@@ -170,6 +186,57 @@ nav ul li a.active {
 }
 
 /* 关于我部分 */
+/* 只针对关于我和联系方式部分设置背景 */
+#about {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('../images/projects/mountain.avif');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: top;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#about .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative; /* 关键：让 ::after 绝对定位于本容器 */
+    z-index: 1;
+}
+
+
+
+#about .container p {
+    position: relative;
+    color: #f3f1f1;
+    z-index: 10;
+    font-size: 1.5vmax;
+    line-height: 1.5;
+}
+
+/* 模糊背景遮罩效果 */
+#about .container::after {
+    position: absolute;
+    content: "";
+    background-image: url('../images/projects/mountain.avif');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: top;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    filter: blur(10px);
+    z-index: 0;
+    opacity: 0.7;
+    border-radius: 5px;
+}
 .about-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -180,8 +247,9 @@ nav ul li a.active {
 .about-text h3 {
     font-size: 1.8rem;
     margin-bottom: 20px;
-    color: #2c3e50;
+    color: #ffffff;
 }
+
 
 .skills {
     margin-top: 20px;
@@ -297,19 +365,26 @@ footer {
     gap: 10px;
 }
 
+
 .back-btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #ecf0f1;
-    color: #2c3e50;
-    text-decoration: none;
-    border-radius: 4px;
-    transition: background-color 0.3s;
-    margin-bottom: 20px;
+  padding: 17px 40px;
+  border-radius: 50px;
+  cursor: pointer;
+  border: 0;
+  background-color: white;
+  box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 15px;
+  transition: all 0.5s ease;
 }
 
 .back-btn:hover {
-    background-color: #bdc3c7;
+  letter-spacing: 3px;
+  background-color: hsl(261deg 80% 48%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(93 24 220) 0px 7px 29px 0px;
 }
 
 .project-content {

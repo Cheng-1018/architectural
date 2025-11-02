@@ -44,94 +44,116 @@ const projectsData = {
             'images/projects/cultural-center-3.jpg'
         ]
     },
-    'green-office': {
-        id: 'green-office',
-        title: '绿色办公大楼',
-        category: '商业建筑',
-        year: '2024',
-        description: '可持续设计理念的办公建筑，采用太阳能板与雨水回收系统。',
-        fullDescription: '这座办公大楼是可持续建筑设计的典范。建筑采用先进的绿色建筑技术，包括太阳能发电系统、雨水收集利用、自然通风系统等。设计注重员工的工作环境质量，创造健康、高效的办公空间。',
+    // 'green-office': {
+    //     id: 'green-office',
+    //     title: '绿色办公大楼',
+    //     category: '商业建筑',
+    //     year: '2024',
+    //     description: '可持续设计理念的办公建筑，采用太阳能板与雨水回收系统。',
+    //     fullDescription: '这座办公大楼是可持续建筑设计的典范。建筑采用先进的绿色建筑技术，包括太阳能发电系统、雨水收集利用、自然通风系统等。设计注重员工的工作环境质量，创造健康、高效的办公空间。',
+    //     features: [
+    //         '屋顶太阳能发电系统',
+    //         '雨水收集与循环利用',
+    //         '垂直绿化与空中花园',
+    //         '自然通风与采光设计',
+    //         '智能楼宇管理系统',
+    //         'LEED金级认证目标'
+    //     ],
+    //     image: 'images/projects/green-office.jpg',
+    //     gallery: [
+    //         'images/projects/green-office-1.jpg',
+    //         'images/projects/green-office-2.jpg',
+    //         'images/projects/green-office-3.jpg'
+    //     ]
+    // },
+    "cultur-center": {
+        id: "cultur-center",
+        title: "城市文化建筑群落",
+        category: "公共建筑",
+        year: "2024",
+        description: "以简洁几何与通透空间，打造现代感文化建筑，成为区域文化交流新载体。",
+        fullDescription: "此文化建筑群落以简约现代设计语言塑造独特文化场域。建筑运用大块面几何形态，搭配通透玻璃元素，营造开放且富有艺术氛围的空间，可承载艺术展览、文化研讨等多元活动，助力社区文化交流与艺术传播。",
         features: [
-            '屋顶太阳能发电系统',
-            '雨水收集与循环利用',
-            '垂直绿化与空中花园',
-            '自然通风与采光设计',
-            '智能楼宇管理系统',
-            'LEED金级认证目标'
-        ],
+            "几何块面造型，强化建筑标识性",
+            "通透玻璃界面，促进内外空间互动",
+            "灵活可变文化活动空间",
+            "简约外立面，凸显现代艺术风格",
+            "适配多元文化活动功能布局",
+            "与周边环境协调的景观设计"
+                    ],
         image: 'images/projects/green-office.jpg',
-        gallery: [
-            'images/projects/green-office-1.jpg',
-            'images/projects/green-office-2.jpg',
-            'images/projects/green-office-3.jpg'
-        ]
-    },
-    'community-library': {
-        id: 'community-library',
-        title: '社区图书馆',
-        category: '教育建筑',
-        year: '2023',
-        description: '为当地社区设计的开放式图书馆，强调阅读氛围与社交空间的结合。',
-        fullDescription: '社区图书馆设计旨在创造一个温馨的知识共享空间。建筑采用开放式布局，既有安静的阅读区域，也有活跃的互动空间。大面积的玻璃幕墙让自然光充分照射室内，营造舒适的阅读环境。',
-        features: [
-            '开放式阅读区与独立学习空间',
-            '儿童活动区与亲子阅读空间',
-            '多媒体学习中心',
-            '室外阅读庭院',
-            '无障碍设施完善',
-            '智能图书管理系统'
-        ],
-        image: 'images/projects/community-library.jpg',
-        gallery: [
-            'images/projects/community-library-1.jpg',
-            'images/projects/community-library-2.jpg',
-            'images/projects/community-library-3.jpg'
-        ]
-    },
-    'eco-resort': {
-        id: 'eco-resort',
-        title: '生态度假村',
-        category: '旅游建筑',
-        year: '2024',
-        description: '与自然环境和谐共存的度假村设计，采用当地材料与传统工艺。',
-        fullDescription: '生态度假村项目位于风景优美的山林之中，设计充分尊重自然环境。建筑采用当地传统材料和工艺，最小化对环境的影响。每个客房都拥有开阔的景观视野，让客人充分享受大自然的美景。',
-        features: [
-            '使用当地天然材料建造',
-            '最小化环境影响的建造方式',
-            '每间客房都有私人景观阳台',
-            '太阳能热水与发电系统',
-            '有机餐厅与农场体验',
-            '生态步道与自然教育中心'
-        ],
-        image: 'images/projects/eco-resort.jpg',
-        gallery: [
-            'images/projects/eco-resort-1.jpg',
-            'images/projects/eco-resort-2.jpg',
-            'images/projects/eco-resort-3.jpg'
-        ]
-    },
-    'art-gallery': {
-        id: 'art-gallery',
-        title: '艺术展览馆',
-        category: '文化建筑',
-        year: '2023',
-        description: '现代艺术展览空间，注重光影效果与参观流线设计。',
-        fullDescription: '艺术展览馆设计以"光与空间"为主题，创造出富有张力的展览环境。建筑采用创新的采光设计，自然光通过精心设计的天窗和侧窗照射入内，为艺术品创造理想的展示环境。流线设计引导参观者经历丰富的空间体验。',
-        features: [
-            '创新的自然采光系统',
-            '灵活可变的展览空间',
-            '专业的艺术品保护设施',
-            '多层次的参观流线设计',
-            '艺术工作坊与教育空间',
-            '户外雕塑展示区'
-        ],
-        image: 'images/projects/art-gallery.jpg',
-        gallery: [
-            'images/projects/art-gallery-1.jpg',
-            'images/projects/art-gallery-2.jpg',
-            'images/projects/art-gallery-3.jpg'
-        ]
+            gallery: [
+                'images/projects/green-office-1.jpg',
+                'images/projects/green-office-2.jpg',
+                'images/projects/green-office-3.jpg'
+                ]
     }
+    // 'community-library': {
+    //     id: 'community-library',
+    //     title: '社区图书馆',
+    //     category: '教育建筑',
+    //     year: '2023',
+    //     description: '为当地社区设计的开放式图书馆，强调阅读氛围与社交空间的结合。',
+    //     fullDescription: '社区图书馆设计旨在创造一个温馨的知识共享空间。建筑采用开放式布局，既有安静的阅读区域，也有活跃的互动空间。大面积的玻璃幕墙让自然光充分照射室内，营造舒适的阅读环境。',
+    //     features: [
+    //         '开放式阅读区与独立学习空间',
+    //         '儿童活动区与亲子阅读空间',
+    //         '多媒体学习中心',
+    //         '室外阅读庭院',
+    //         '无障碍设施完善',
+    //         '智能图书管理系统'
+    //     ],
+    //     image: 'images/projects/community-library.jpg',
+    //     gallery: [
+    //         'images/projects/community-library-1.jpg',
+    //         'images/projects/community-library-2.jpg',
+    //         'images/projects/community-library-3.jpg'
+    //     ]
+    // },
+    // 'eco-resort': {
+    //     id: 'eco-resort',
+    //     title: '生态度假村',
+    //     category: '旅游建筑',
+    //     year: '2024',
+    //     description: '与自然环境和谐共存的度假村设计，采用当地材料与传统工艺。',
+    //     fullDescription: '生态度假村项目位于风景优美的山林之中，设计充分尊重自然环境。建筑采用当地传统材料和工艺，最小化对环境的影响。每个客房都拥有开阔的景观视野，让客人充分享受大自然的美景。',
+    //     features: [
+    //         '使用当地天然材料建造',
+    //         '最小化环境影响的建造方式',
+    //         '每间客房都有私人景观阳台',
+    //         '太阳能热水与发电系统',
+    //         '有机餐厅与农场体验',
+    //         '生态步道与自然教育中心'
+    //     ],
+    //     image: 'images/projects/eco-resort.jpg',
+    //     gallery: [
+    //         'images/projects/eco-resort-1.jpg',
+    //         'images/projects/eco-resort-2.jpg',
+    //         'images/projects/eco-resort-3.jpg'
+    //     ]
+    // },
+    // 'art-gallery': {
+    //     id: 'art-gallery',
+    //     title: '艺术展览馆',
+    //     category: '文化建筑',
+    //     year: '2023',
+    //     description: '现代艺术展览空间，注重光影效果与参观流线设计。',
+    //     fullDescription: '艺术展览馆设计以"光与空间"为主题，创造出富有张力的展览环境。建筑采用创新的采光设计，自然光通过精心设计的天窗和侧窗照射入内，为艺术品创造理想的展示环境。流线设计引导参观者经历丰富的空间体验。',
+    //     features: [
+    //         '创新的自然采光系统',
+    //         '灵活可变的展览空间',
+    //         '专业的艺术品保护设施',
+    //         '多层次的参观流线设计',
+    //         '艺术工作坊与教育空间',
+    //         '户外雕塑展示区'
+    //     ],
+    //     image: 'images/projects/art-gallery.jpg',
+    //     gallery: [
+    //         'images/projects/art-gallery-1.jpg',
+    //         'images/projects/art-gallery-2.jpg',
+    //         'images/projects/art-gallery-3.jpg'
+    //     ]
+    // }
 };
 
 // 导出供其他文件使用
