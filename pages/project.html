@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="page-title">项目详情 | 建筑作品集</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- 头部导航 -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">建筑作品集</div>
+                <nav>
+                    <ul>
+                        <li><a href="../index.html#home">首页</a></li>
+                        <li><a href="../index.html#portfolio">作品集</a></li>
+                        <li><a href="../index.html#about">关于我</a></li>
+                        <li><a href="../index.html#contact">联系</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- 项目详情 -->
+    <section class="project-detail">
+        <div class="container">
+            <a href="../index.html#portfolio" class="back-btn">← 返回作品集</a>
+            
+            <div class="project-header">
+                <h1 id="project-title">项目标题</h1>
+                <div class="project-meta-detail">
+                    <span>📅 <span id="project-year">2024</span></span>
+                    <span>🏛️ <span id="project-category">项目类型</span></span>
+                </div>
+            </div>
+
+            <div class="project-content">
+                <!-- 主图 -->
+                <div class="project-image-placeholder" id="main-image">
+                    <p>项目主图</p>
+                </div>
+
+                <!-- 项目描述 -->
+                <div class="project-description">
+                    <h2>项目概述</h2>
+                    <p id="project-description">
+                        项目描述将在这里显示...
+                    </p>
+                </div>
+
+                <!-- 项目特点 -->
+                <div class="project-features">
+                    <h2>项目特点</h2>
+                    <ul id="project-features-list">
+                        <!-- 特点将通过JavaScript动态加载 -->
+                    </ul>
+                </div>
+
+                <!-- 项目图集 -->
+                <div class="project-gallery">
+                    <h2>项目图集</h2>
+                    <div class="gallery-grid" id="project-gallery">
+                        <!-- 图片将通过JavaScript动态加载 -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 建筑设计作品集. 保留所有权利.</p>
+        </div>
+    </footer>
+
+    <!-- 引入JavaScript文件 -->
+    <script src="../js/projects-data.js"></script>
+    <script src="../js/project-detail.js"></script>
+</body>
+</html>
